@@ -6,7 +6,7 @@
 
 ## 控制電路
 
-![圖1 馬達控制電路](circuit.png)
+![圖1 馬達控制電路](images/circuit.png)
 
 圖1 馬達控制電路
 
@@ -15,13 +15,13 @@
 依照此電路圖可以選擇自己手焊或者使用 Mini Fan電路板來連接馬達。
 
 
-![圖2 手焊電路](circuit2.jpeg)
+![圖2 手焊電路](images/circuit2.jpeg)
 
 圖2 手焊電路
 
 
 
-![圖3 Mini Fan電路板](mini_fan.jpg)
+![圖3 Mini Fan電路板](images/mini_fan.jpg)
 
 圖3 Mini Fan電路板
 
@@ -37,8 +37,6 @@
 | 1 - Pwm   | P21 - SCL  |
 | 3 - Vcc   | Vout - 3.3V|
 | 4 - GND   | GND        |
-
-![圖 ](mini_fan.jpg)
 
 
 
