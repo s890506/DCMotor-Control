@@ -81,4 +81,4 @@ int main() {
 
 ## 參考資料
 * http://www.seeedstudio.com/wiki/images/5/5b/Grove_-_Mini_Fan_v1.0.pdf
-* hhttp://www.shs.edu.tw/works/essay/2008/10/2008102923422666.pdf
+* http://www.shs.edu.tw/works/essay/2008/10/2008102923422666.pdf
