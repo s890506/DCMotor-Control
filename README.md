@@ -1,5 +1,5 @@
-# 於 mbed上控制直流有刷馬達
-直流有刷馬達好處在為控制速度方面比較簡單，可以在不受電源頻率的限制下，使用電壓大小控制轉速。而本篇即要透過此方法展示使用 PwmOut來控制直流有刷馬達。本文使用的[馬達為此](http://www.seeedstudio.com/depot/Crazyflie-20-Spare-7x16-mm-coreless-DC-motor-with-connector-p-2115.html)。
+# 於 ARM mbed 上控制直流有刷馬達
+直流有刷馬達好處在為控制速度方面比較簡單，可以在不受電源頻率的限制下，使用電壓大小控制轉速。而本篇即要透過此方法展示使用 PwmOut 來控制直流有刷馬達。本文使用的[馬達為此](http://www.seeedstudio.com/depot/Crazyflie-20-Spare-7x16-mm-coreless-DC-motor-with-connector-p-2115.html)。
 
 
 
@@ -12,7 +12,7 @@
 
 
 
-依照此電路圖可以選擇自己手焊或者使用 Mini Fan電路板來連接馬達。
+依照此電路圖可以選擇自己手焊或者使用 Mini Fan 電路板來連接馬達。
 
 
 ![圖2 手焊電路](images/circuit2.jpeg)
@@ -23,14 +23,14 @@
 
 ![圖3 Mini Fan電路板](images/mini_fan.jpg)
 
-圖3 Mini Fan電路板
+圖3 Mini Fan 電路板
 
 
 
 
 ## 腳位接法
 
-由於 LPC1768有電路保護，因此馬達的供應電源需要再額外供應。
+由於 LPC1768 有電路保護，因此馬達的供應電源需要再額外供應。
 
 | Motor pin | Mbed pin   |
 | --------- | ---------- |
@@ -43,7 +43,7 @@
 
 ## 程式碼
 
-開始撰寫 ARM mbed 程式碼。首先，必須引入 mbed.h標頭檔，接著將連接腳位(這邊要特別注意馬達的腳位宣告要使用 PwmOut)。並且我們利用 LED燈來表示轉速的變化。
+開始撰寫 ARM mbed 程式碼。首先，必須引入 mbed.h 標頭檔，接著將連接腳位(這邊要特別注意馬達的腳位宣告要使用 PwmOut)。並且我們利用 LED 燈來表示轉速的變化。
 
 
 ```
